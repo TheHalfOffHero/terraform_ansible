@@ -1,0 +1,9 @@
+variable "ssh_key" {
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkZ5oSfp6kCSo/X95Y2lzspzOX8w30h/lNBBowGt8IrgLzsNSN1HpiyGJ69ILT01tciK5rIcXkWb9zZxwaFmWr/OUVZMBt8CYnMoYapoXlOW40spF85B97g5G/Ugohfh94StFaoxKoEUoKg60IAlOThmSQpJyBWdWbLXIYo/t908cSH55A05WEjmMROXvtIs3tK7l+2wQJ5QsaiB1T3/gnOTDsNHbHyF4cH0armSo7TP3DhMVLYZVra8ZX7QLstrr0U2pLitECMFUWwdhlnSP0ccdPIXW+JIe6dbSzGf82BdSCuEGdBpYxVmbEunrnpv7TMQt2zVG5CNQ8Hp1LaGRd5dvX/ib5V5VS8DnnlXDrXBexhh8wmu2qqNrPH6DAhE9V9+k0gVk6+0dE5REg3QN6ifeJJZSMHF+4OOJ43oIU8SZ16LJg5ooge8nX7UfS6ixxTUBUjzb2LuiLEfrbOEqYlHFIo4cPjlprsgnu3WHhrVVU1y7odzYtUMsdOfhQt3M= mattruiz@vegeta"
+}
+variable "proxmox_host" {
+    default = "Gandalf"
+}
+variable "template_name" {
+    default = "ubuntu-2104-cloudinit-template"
+}
