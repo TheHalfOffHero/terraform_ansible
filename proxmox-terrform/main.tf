@@ -10,15 +10,19 @@ terraform {
 #Token ID: terraform@pam!terraform_token
 #Token Secret: d2fe4fac-9bf3-4265-8345-626169578a85
 
+#Token Secret 2: ebf60481-f4c4-4ff9-b704-4860a270d72c
+#Token ID 2: terraform-prov@pve!terraform-prov
 provider "proxmox" {
   # url is the hostname (FQDN if you have one) for the proxmox host you'd like to connect to to issue the commands. my proxmox host is 'prox-1u'. Add /api2/json at the end for the API
   pm_api_url = "https://proxmox:8006/api2/json"
 
   # api token id is in the form of: <username>@pam!<tokenId>
-  #pm_api_token_id = "terraform@pam!terraform_token"
+  #pm_api_token_id = "terraform-prov@pve!terraform-prov"
 
   # this is the full secret wrapped in quotes. don't worry, I've already deleted this from my proxmox cluster by the time you read this post
-  #pm_api_token_secret = "d2fe4fac-9bf3-4265-8345-626169578a85"
+  #pm_api_token_secret = "ebf60481-f4c4-4ff9-b704-4860a270d72c"
+  
+  
   pm_user = "terraform-prov@pve"
   pm_password = "terraform"
   
@@ -35,7 +39,7 @@ provider "proxmox" {
 # resource is formatted to be "[type]" "[entity_name]" so in this case
 # we are looking to create a proxmox_vm_qemu entity named test_server
 resource "proxmox_vm_qemu" "test_server" {
-  count = 2 # just want 1 for now, set to 0 and apply to destroy VM
+  count = 0 # just want 1 for now, set to 0 and apply to destroy VM
   vmid = "300${count.index + 1}"
   name = "test-vm-${count.index + 1}" #count.index starts at 0, so + 1 means this VM will be named test-vm-1 in proxmox
   # this now reaches out to the vars file. I could've also used this var above in the pm_api_url setting but wanted to spell it out up there. target_node is different than api_url. target_node is which node hosts the template and thus also which node will host the new VM. it can be different than the host you use to communicate with the API.
