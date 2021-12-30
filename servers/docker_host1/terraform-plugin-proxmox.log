@@ -1,0 +1,1220 @@
+[90mWed, 29 Dec 2021 19:32:22 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 29 Dec 2021 19:32:22 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 29 Dec 2021 19:34:02 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 29 Dec 2021 19:34:02 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 29 Dec 2021 19:34:45 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 29 Dec 2021 19:34:45 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 29 Dec 2021 19:34:47 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 29 Dec 2021 19:34:47 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2021/12/29 19:34:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+[90mWed, 29 Dec 2021 19:34:47 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:668[0m[36m >[0m Invoking VM create with resource data:  '{"additional_wait":0,"agent":1,"args":"","balloon":0,"bios":"seabios","boot":"c","bootdisk":"scsi0","bridge":"","ci_wait":0,"cicustom":"","cipassword":"","ciuser":"","clone":"ubuntu-2104-cloudinit-template","clone_wait":0,"cloudinit_cdrom_storage":"","cores":4,"cpu":"host","default_ipv4_address":"","define_connection_info":true,"desc":"","disk":[{"backup":0,"cache":"none","discard":"","file":"","format":"","iothread":1,"mbps":0,"mbps_rd":0,"mbps_rd_max":0,"mbps_wr":0,"mbps_wr_max":0,"media":"","replicate":0,"size":"60G","slot":0,"ssd":0,"storage":"local-lvm","storage_type":"","type":"scsi","volume":""}],"disk_gb":0,"force_create":false,"force_recreate_on_change_of":"","full_clone":true,"guest_agent_ready_timeout":100,"hagroup":"","hastate":"","hotplug":"network,disk,usb","ipconfig0":"ip=192.168.2.41/24,gw=192.168.2.1","ipconfig1":"","ipconfig2":"","ipconfig3":"","ipconfig4":"","ipconfig5":"","iso":"","kvm":true,"mac":"","memory":8192,"name":"docker-host-1","nameserver":"","network":[{"bridge":"vmbr1","firewall":false,"link_down":false,"macaddr":"","model":"virtio","queues":0,"rate":0,"tag":-1}],"nic":"","numa":false,"onboot":false,"oncreate":true,"os_network_config":"","os_type":"cloud-init","pool":"","preprovision":true,"qemu_os":"","reboot_required":false,"scsihw":"virtio-scsi-pci","searchdomain":"","serial":[],"sockets":1,"ssh_forward_ip":"","ssh_host":"","ssh_port":"","ssh_private_key":"","ssh_user":"","sshkeys":"  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI/JrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4/QnXUW7hAF/EmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv/LS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF/N9dmHEWn8tgPaQADmuQ/wDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N+IZ9lQYmtYX6gI9K4KV5JFB0M5MRR9+p3YmrO+RZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz+fBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe/Y99CAXlmjrHMXe2F4D87u8xdFqdB+jcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU/W0WvCbrU= ansible\n","storage":"","storage_type":"","tablet":true,"tags":"","target_node":"Gandalf","unused_disk":[],"vcpus":0,"vga":[],"vlan":-1,"vmid":4001}' [36mloggerName=[0mresource_vm_create [36mvmid=[0m
+2021/12/29 19:34:47 [DEBUG][QemuVmCreate] checking for duplicate name: docker-host-1
+2021/12/29 19:34:47 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 2349
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:47 GMT
+Expires: Thu, 30 Dec 2021 00:34:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"uptime":7992272,"name":"Plex","vmid":1002,"maxmem":16777216000,"id":"qemu/1002","disk":0,"node":"Gandalf","cpu":0.00510689311262921,"diskread":6447980622,"type":"qemu","status":"running","maxdisk":48318382080,"netout":45618697086,"template":0,"netin":77438974180,"mem":15718584320,"diskwrite":63277702144,"maxcpu":16},{"maxmem":2147483648,"id":"qemu/2002","disk":0,"uptime":0,"name":"PXE","vmid":2002,"node":"Gandalf","cpu":0,"diskread":0,"template":0,"netin":0,"type":"qemu","status":"stopped","maxdisk":32212254720,"netout":0,"mem":0,"diskwrite":0,"maxcpu":1},{"maxcpu":2,"mem":0,"diskwrite":0,"netin":0,"template":0,"netout":0,"maxdisk":53687091200,"status":"stopped","type":"qemu","diskread":0,"cpu":0,"node":"Gandalf","disk":0,"id":"qemu/1003","maxmem":2147483648,"vmid":1003,"name":"sandbox","uptime":0},{"diskread":424841938,"node":"Gandalf","cpu":0.0032254061763974,"vmid":2001,"name":"test-Ubuntu","uptime":1481698,"disk":0,"maxmem":2147483648,"id":"qemu/2001","maxcpu":1,"mem":1180692480,"diskwrite":3475106816,"maxdisk":2361393152,"netout":2414857,"type":"qemu","status":"running","template":0,"netin":175187681},{"node":"Gandalf","cpu":0,"diskread":0,"uptime":0,"vmid":9000,"name":"ubuntu-2104-cloudinit-template","maxmem":2147483648,"id":"qemu/9000","disk":0,"mem":0,"diskwrite":0,"maxcpu":1,"type":"qemu","status":"stopped","maxdisk":2361393152,"netout":0,"template":1,"netin":0},{"netin":490342981,"template":0,"netout":4621363,"maxdisk":10737418240,"status":"running","type":"qemu","maxcpu":1,"diskwrite":3939629568,"mem":1150021632,"disk":0,"id":"qemu/2003","maxmem":2147483648,"name":"test-CentOS","vmid":2003,"uptime":1482000,"diskread":1642027810,"cpu":0.00430054156852986,"node":"Gandalf"},{"node":"Gandalf","cpu":0.0559070403908882,"diskread":557767890,"uptime":7992277,"name":"wiki","vmid":1001,"maxmem":2147483648,"id":"qemu/1001","disk":0,"diskwrite":5656865792,"mem":1228017664,"maxcpu":1,"type":"qemu","status":"running","maxdisk":48318382080,"netout":13782509,"template":0,"netin":2538678623},{"node":"Gandalf","cpu":0.0311789263718415,"diskread":615806162,"uptime":7992282,"vmid":1000,"name":"Pi-Hole","maxmem":4328521728,"id":"qemu/1000","disk":0,"diskwrite":140862051840,"mem":1497120768,"maxcpu":2,"type":"qemu","status":"running","maxdisk":42949672960,"netout":886594746,"template":0,"netin":6655976377}]}
+2021/12/29 19:34:47 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:47 GMT
+Expires: Thu, 30 Dec 2021 00:34:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"100"}
+2021/12/29 19:34:47 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 2349
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:47 GMT
+Expires: Thu, 30 Dec 2021 00:34:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"uptime":7992272,"name":"Plex","vmid":1002,"id":"qemu/1002","maxmem":16777216000,"disk":0,"cpu":0.00510689311262921,"node":"Gandalf","diskread":6447980622,"status":"running","type":"qemu","netout":45618697086,"maxdisk":48318382080,"netin":77438974180,"template":0,"mem":15718584320,"diskwrite":63277702144,"maxcpu":16},{"status":"stopped","type":"qemu","netout":0,"maxdisk":32212254720,"netin":0,"template":0,"diskwrite":0,"mem":0,"maxcpu":1,"uptime":0,"vmid":2002,"name":"PXE","id":"qemu/2002","maxmem":2147483648,"disk":0,"cpu":0,"node":"Gandalf","diskread":0},{"uptime":0,"name":"sandbox","vmid":1003,"maxmem":2147483648,"id":"qemu/1003","disk":0,"node":"Gandalf","cpu":0,"diskread":0,"type":"qemu","status":"stopped","maxdisk":53687091200,"netout":0,"template":0,"netin":0,"mem":0,"diskwrite":0,"maxcpu":2},{"status":"running","type":"qemu","netout":2414857,"maxdisk":2361393152,"netin":175187681,"template":0,"mem":1180692480,"diskwrite":3475106816,"maxcpu":1,"uptime":1481698,"name":"test-Ubuntu","vmid":2001,"id":"qemu/2001","maxmem":2147483648,"disk":0,"cpu":0.0032254061763974,"node":"Gandalf","diskread":424841938},{"cpu":0,"node":"Gandalf","diskread":0,"uptime":0,"name":"ubuntu-2104-cloudinit-template","vmid":9000,"id":"qemu/9000","maxmem":2147483648,"disk":0,"mem":0,"diskwrite":0,"maxcpu":1,"status":"stopped","type":"qemu","netout":0,"maxdisk":2361393152,"netin":0,"template":1},{"node":"Gandalf","cpu":0.00430054156852986,"diskread":1642027810,"maxmem":2147483648,"id":"qemu/2003","disk":0,"uptime":1482000,"vmid":2003,"name":"test-CentOS","diskwrite":3939629568,"mem":1150021632,"maxcpu":1,"template":0,"netin":490342981,"type":"qemu","status":"running","maxdisk":10737418240,"netout":4621363},{"diskwrite":5656865792,"mem":1228017664,"maxcpu":1,"netin":2538678623,"template":0,"status":"running","type":"qemu","netout":13782509,"maxdisk":48318382080,"cpu":0.0559070403908882,"node":"Gandalf","diskread":557767890,"id":"qemu/1001","maxmem":2147483648,"disk":0,"uptime":7992277,"name":"wiki","vmid":1001},{"uptime":7992282,"vmid":1000,"name":"Pi-Hole","maxmem":4328521728,"id":"qemu/1000","disk":0,"node":"Gandalf","cpu":0.0311789263718415,"diskread":615806162,"type":"qemu","status":"running","maxdisk":42949672960,"netout":886594746,"template":0,"netin":6655976377,"mem":1497120768,"diskwrite":140862051840,"maxcpu":2}]}
+2021/12/29 19:34:47 [DEBUG][QemuVmCreate] cloning VM
+2021/12/29 19:34:47 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/Gandalf/qemu/9000/clone HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 69
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+full=1&name=docker-host-1&newid=4001&storage=local-lvm&target=Gandalf
+2021/12/29 19:34:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 83
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:47 GMT
+Expires: Thu, 30 Dec 2021 00:34:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:"}
+2021/12/29 19:34:47 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:47 GMT
+Expires: Thu, 30 Dec 2021 00:34:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"9000","status":"running","starttime":1640824487,"pid":12498,"user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:"}}
+2021/12/29 19:34:49 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:49 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:49 GMT
+Expires: Thu, 30 Dec 2021 00:34:49 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","starttime":1640824487,"pid":12498}}
+2021/12/29 19:34:51 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:51 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:51 GMT
+Expires: Thu, 30 Dec 2021 00:34:51 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824487,"pid":12498,"pstart":799233159,"user":"terraform-prov@pve","type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","id":"9000","status":"running"}}
+2021/12/29 19:34:53 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:53 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:54 GMT
+Expires: Thu, 30 Dec 2021 00:34:54 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"type":"qmclone","user":"terraform-prov@pve","pstart":799233159,"node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","starttime":1640824487,"pid":12498,"status":"running","id":"9000"}}
+2021/12/29 19:34:55 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:56 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:56 GMT
+Expires: Thu, 30 Dec 2021 00:34:56 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824487,"pid":12498,"user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","id":"9000","status":"running"}}
+2021/12/29 19:34:58 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:34:58 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:34:58 GMT
+Expires: Thu, 30 Dec 2021 00:34:58 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","type":"qmclone","user":"terraform-prov@pve","pstart":799233159,"pid":12498,"starttime":1640824487,"status":"running","id":"9000"}}
+2021/12/29 19:35:00 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:00 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:00 GMT
+Expires: Thu, 30 Dec 2021 00:35:00 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","pid":12498,"starttime":1640824487}}
+2021/12/29 19:35:02 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:02 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:02 GMT
+Expires: Thu, 30 Dec 2021 00:35:02 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"9000","status":"running","starttime":1640824487,"pid":12498,"type":"qmclone","pstart":799233159,"user":"terraform-prov@pve","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:"}}
+2021/12/29 19:35:04 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:04 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:04 GMT
+Expires: Thu, 30 Dec 2021 00:35:04 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","pstart":799233159,"user":"terraform-prov@pve","type":"qmclone","pid":12498,"starttime":1640824487}}
+2021/12/29 19:35:06 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:06 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:06 GMT
+Expires: Thu, 30 Dec 2021 00:35:06 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","pid":12498,"starttime":1640824487}}
+2021/12/29 19:35:08 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:08 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:08 GMT
+Expires: Thu, 30 Dec 2021 00:35:08 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","type":"qmclone","pstart":799233159,"user":"terraform-prov@pve","pid":12498,"starttime":1640824487}}
+2021/12/29 19:35:10 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:10 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:10 GMT
+Expires: Thu, 30 Dec 2021 00:35:10 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"9000","status":"running","pid":12498,"starttime":1640824487,"upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","type":"qmclone","user":"terraform-prov@pve","pstart":799233159}}
+2021/12/29 19:35:12 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:12 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:12 GMT
+Expires: Thu, 30 Dec 2021 00:35:12 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824487,"pid":12498,"user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","id":"9000","status":"running"}}
+2021/12/29 19:35:14 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:14 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:14 GMT
+Expires: Thu, 30 Dec 2021 00:35:14 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","starttime":1640824487,"pid":12498,"status":"running","id":"9000"}}
+2021/12/29 19:35:16 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:16 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:16 GMT
+Expires: Thu, 30 Dec 2021 00:35:16 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","type":"qmclone","user":"terraform-prov@pve","pstart":799233159,"pid":12498,"starttime":1640824487}}
+2021/12/29 19:35:18 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:18 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:18 GMT
+Expires: Thu, 30 Dec 2021 00:35:18 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","id":"9000","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","pstart":799233159,"user":"terraform-prov@pve","type":"qmclone","pid":12498,"starttime":1640824487}}
+2021/12/29 19:35:20 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:20 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:20 GMT
+Expires: Thu, 30 Dec 2021 00:35:20 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"9000","status":"running","starttime":1640824487,"pid":12498,"type":"qmclone","pstart":799233159,"user":"terraform-prov@pve","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf"}}
+2021/12/29 19:35:22 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:22 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:22 GMT
+Expires: Thu, 30 Dec 2021 00:35:22 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pid":12498,"starttime":1640824487,"node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","type":"qmclone","pstart":799233159,"user":"terraform-prov@pve","id":"9000","status":"running"}}
+2021/12/29 19:35:24 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:24 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:24 GMT
+Expires: Thu, 30 Dec 2021 00:35:24 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","pstart":799233159,"user":"terraform-prov@pve","type":"qmclone","pid":12498,"starttime":1640824487,"status":"running","id":"9000"}}
+2021/12/29 19:35:26 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:26 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:26 GMT
+Expires: Thu, 30 Dec 2021 00:35:26 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pid":12498,"starttime":1640824487,"upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","id":"9000","status":"running"}}
+2021/12/29 19:35:28 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:28 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:28 GMT
+Expires: Thu, 30 Dec 2021 00:35:28 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","type":"qmclone","user":"terraform-prov@pve","pstart":799233159,"pid":12498,"starttime":1640824487,"status":"running","id":"9000"}}
+2021/12/29 19:35:30 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:30 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:30 GMT
+Expires: Thu, 30 Dec 2021 00:35:30 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","user":"terraform-prov@pve","pstart":799233159,"type":"qmclone","pid":12498,"starttime":1640824487,"status":"running","id":"9000"}}
+2021/12/29 19:35:32 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:32 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:32 GMT
+Expires: Thu, 30 Dec 2021 00:35:32 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pstart":799233159,"user":"terraform-prov@pve","type":"qmclone","node":"Gandalf","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","starttime":1640824487,"pid":12498,"status":"running","id":"9000"}}
+2021/12/29 19:35:34 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:34 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:34 GMT
+Expires: Thu, 30 Dec 2021 00:35:34 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824487,"pid":12498,"type":"qmclone","user":"terraform-prov@pve","pstart":799233159,"upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","id":"9000","status":"running"}}
+2021/12/29 19:35:36 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:35:36 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 257
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:35:36 GMT
+Expires: Thu, 30 Dec 2021 00:35:36 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824487,"pid":12498,"pstart":799233159,"exitstatus":"OK","user":"terraform-prov@pve","type":"qmclone","upid":"UPID:Gandalf:000030D2:2FA35487:61CCFEA7:qmclone:9000:terraform-prov@pve:","node":"Gandalf","id":"9000","status":"stopped"}}
+2021/12/29 19:36:06 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/config HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:06 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 444
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:06 GMT
+Expires: Thu, 30 Dec 2021 00:36:06 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"scsi0":"local-lvm:vm-4001-disk-0,size=2252M","vga":"serial0","vmgenid":"19a152e7-fa40-4356-a2e3-24bf7b18067d","ide2":"local-lvm:vm-4001-cloudinit,media=cdrom,size=4M","serial0":"socket","boot":"c","smbios1":"uuid=70dbcd8f-3b2c-472b-baf4-0a48184467e4","scsihw":"virtio-scsi-pci","net0":"virtio=BE:6E:98:82:86:8D,bridge=vmbr1","bootdisk":"scsi0","memory":2048,"name":"docker-host-1","digest":"6329f17523e161b20c17b52d01d785c4cf3ae7bc"}}
+2021/12/29 19:36:06 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/storage/local-lvm/content HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:06 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 11
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:06 GMT
+Expires: Thu, 30 Dec 2021 00:36:06 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[]}
+2021/12/29 19:36:06 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/storage/local-lvm/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:07 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 149
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:07 GMT
+Expires: Thu, 30 Dec 2021 00:36:07 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"avail":779223440137,"enabled":1,"shared":0,"total":851238191104,"used":72014750967,"type":"lvmthin","active":1,"content":"rootdir,images"}}
+[90mWed, 29 Dec 2021 19:36:07 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:803[0m[36m >[0m Original disks: 'map[0:map[backup:0 cache:none discard: file: format: iothread:1 mbps:0 mbps_rd:0 mbps_rd_max:0 mbps_wr:0 mbps_wr_max:0 media: replicate:0 size:60G slot:0 ssd:0 storage:local-lvm storage_type: type:scsi volume:]]', Clone Disks 'map[0:map[file:vm-4001-disk-0 format: size:2252M slot:0 storage:local-lvm storage_type:lvmthin type:scsi volume:local-lvm:vm-4001-disk-0]]' [36mloggerName=[0mresource_vm_create [36mvmid=[0m
+2021/12/29 19:36:07 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/Gandalf/qemu/4001/config HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 1039
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+agent=1&bios=seabios&boot=c&bootdisk=scsi0&cores=4&cpu=host&delete=balloon%2C+vcpus%2C+vga&hotplug=network%2Cdisk%2Cusb&ipconfig0=ip%3D192.168.2.41%2F24%2Cgw%3D192.168.2.1&kvm=1&memory=8192&name=docker-host-1&net0=virtio%3D36%3A2B%3A0F%3ABA%3A45%3A9D%2Cbridge%3Dvmbr1&numa=0&onboot=0&scsi0=local-lvm%3Avm-4001-disk-0%2Csize%3D60G%2Ciothread%3D1&scsihw=virtio-scsi-pci&sockets=1&sshkeys=%2520%2520ssh-rsa%2520AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI%252FJrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4%252FQnXUW7hAF%252FEmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv%252FLS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF%252FN9dmHEWn8tgPaQADmuQ%252FwDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N%252BIZ9lQYmtYX6gI9K4KV5JFB0M5MRR9%252Bp3YmrO%252BRZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz%252BfBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe%252FY99CAXlmjrHMXe2F4D87u8xdFqdB%252BjcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU%252FW0WvCbrU%253D%2520ansible%250A%250A&tablet=1
+2021/12/29 19:36:07 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 84
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:07 GMT
+Expires: Thu, 30 Dec 2021 00:36:07 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:Gandalf:000031F9:2FA37389:61CCFEF7:qmconfig:4001:terraform-prov@pve:"}
+2021/12/29 19:36:07 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000031F9:2FA37389:61CCFEF7:qmconfig:4001:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:07 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 241
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:07 GMT
+Expires: Thu, 30 Dec 2021 00:36:07 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:Gandalf:000031F9:2FA37389:61CCFEF7:qmconfig:4001:terraform-prov@pve:","node":"Gandalf","type":"qmconfig","pstart":799241097,"user":"terraform-prov@pve","pid":12793,"starttime":1640824567,"status":"running","id":"4001"}}
+2021/12/29 19:36:09 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:000031F9:2FA37389:61CCFEF7:qmconfig:4001:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:09 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 259
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:09 GMT
+Expires: Thu, 30 Dec 2021 00:36:09 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"4001","status":"stopped","pid":12793,"starttime":1640824567,"node":"Gandalf","upid":"UPID:Gandalf:000031F9:2FA37389:61CCFEF7:qmconfig:4001:terraform-prov@pve:","user":"terraform-prov@pve","exitstatus":"OK","pstart":799241097,"type":"qmconfig"}}
+2021/12/29 19:36:09 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/config HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:09 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1236
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:09 GMT
+Expires: Thu, 30 Dec 2021 00:36:09 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"bios":"seabios","net0":"virtio=36:2B:0F:BA:45:9D,bridge=vmbr1","cpu":"host","smbios1":"uuid=70dbcd8f-3b2c-472b-baf4-0a48184467e4","ipconfig0":"ip=192.168.2.41/24,gw=192.168.2.1","sshkeys":"%20%20ssh-rsa%20AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI%2FJrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4%2FQnXUW7hAF%2FEmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv%2FLS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF%2FN9dmHEWn8tgPaQADmuQ%2FwDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N%2BIZ9lQYmtYX6gI9K4KV5JFB0M5MRR9%2Bp3YmrO%2BRZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz%2BfBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe%2FY99CAXlmjrHMXe2F4D87u8xdFqdB%2BjcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU%2FW0WvCbrU%3D%20ansible%0A%0A","name":"docker-host-1","memory":8192,"bootdisk":"scsi0","vmgenid":"19a152e7-fa40-4356-a2e3-24bf7b18067d","agent":"1","boot":"c","ide2":"local-lvm:vm-4001-cloudinit,media=cdrom,size=4M","kvm":1,"scsihw":"virtio-scsi-pci","onboot":0,"digest":"a33524231fa755b372a28160a04335e0047f3c13","numa":0,"hotplug":"network,disk,usb","scsi0":"local-lvm:vm-4001-disk-0,iothread=1,size=2252M","cores":4,"sockets":1,"tablet":1,"serial0":"socket"}}
+2021/12/29 19:36:09 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/storage/local-lvm/content HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:10 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 11
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:09 GMT
+Expires: Thu, 30 Dec 2021 00:36:09 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[]}
+2021/12/29 19:36:10 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/storage/local-lvm/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:10 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 149
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:10 GMT
+Expires: Thu, 30 Dec 2021 00:36:10 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"enabled":1,"shared":0,"avail":779223440137,"type":"lvmthin","content":"images,rootdir","active":1,"total":851238191104,"used":72014750967}}
+[90mWed, 29 Dec 2021 19:36:10 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1467[0m[36m >[0m Checking disk sizing. Original '60', New '2.19921875' [36mdiskId=[0m0 [36mloggerName=[0mprepareDiskSize
+[90mWed, 29 Dec 2021 19:36:10 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1469[0m[36m >[0m Resizing disk. Original '60', New '2.19921875' [36mdiskId=[0m0 [36mloggerName=[0mprepareDiskSize
+2021/12/29 19:36:10 >>>>>>>>>> REQUEST:
+PUT /api2/json/nodes/Gandalf/qemu/4001/resize HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 22
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+disk=scsi0&size=%2B57G
+2021/12/29 19:36:10 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 13
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:10 GMT
+Expires: Thu, 30 Dec 2021 00:36:10 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+[90mWed, 29 Dec 2021 19:36:10 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:867[0m[36m >[0m Set this vm (resource Id) to 'Gandalf/qemu/4001' [36mloggerName=[0mresource_vm_create [36mvmid=[0m4001
+2021/12/29 19:36:10 [DEBUG][QemuVmCreate] starting VM
+2021/12/29 19:36:10 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/Gandalf/qemu/4001/status/start HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 0
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:11 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 83
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:11 GMT
+Expires: Thu, 30 Dec 2021 00:36:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:Gandalf:00003228:2FA37502:61CCFEFB:qmstart:4001:terraform-prov@pve:"}
+2021/12/29 19:36:11 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:00003228:2FA37502:61CCFEFB:qmstart:4001:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:11 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 239
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:11 GMT
+Expires: Thu, 30 Dec 2021 00:36:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824571,"pid":12840,"type":"qmstart","user":"terraform-prov@pve","pstart":799241474,"node":"Gandalf","upid":"UPID:Gandalf:00003228:2FA37502:61CCFEFB:qmstart:4001:terraform-prov@pve:","id":"4001","status":"running"}}
+2021/12/29 19:36:13 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/tasks/UPID:Gandalf:00003228:2FA37502:61CCFEFB:qmstart:4001:terraform-prov@pve:/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:13 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 257
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:13 GMT
+Expires: Thu, 30 Dec 2021 00:36:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1640824571,"pid":12840,"exitstatus":"OK","user":"terraform-prov@pve","pstart":799241474,"type":"qmstart","upid":"UPID:Gandalf:00003228:2FA37502:61CCFEFB:qmstart:4001:terraform-prov@pve:","node":"Gandalf","id":"4001","status":"stopped"}}
+2021/12/29 19:36:13 [DEBUG][initConnInfo] trying to get vm ip address for provisioner
+2021/12/29 19:36:13 [DEBUG][initConnInfo] retrying for at most  5m0s minutes before giving up
+2021/12/29 19:36:13 [DEBUG][initConnInfo] retries will end at 2021-12-29 19:41:13.114393832 -0500 EST m=+385.498192470
+2021/12/29 19:36:13 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/agent/network-get-interfaces HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:16 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:16 GMT
+Expires: Thu, 30 Dec 2021 00:36:16 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2021/12/29 19:36:16 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+2021/12/29 19:36:26 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/agent/network-get-interfaces HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:29 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:29 GMT
+Expires: Thu, 30 Dec 2021 00:36:29 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2021/12/29 19:36:29 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+2021/12/29 19:36:39 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/agent/network-get-interfaces HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:42 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:42 GMT
+Expires: Thu, 30 Dec 2021 00:36:42 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2021/12/29 19:36:42 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+2021/12/29 19:36:52 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/agent/network-get-interfaces HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:52 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 697
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:52 GMT
+Expires: Thu, 30 Dec 2021 00:36:52 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"result":[{"ip-addresses":[{"prefix":8,"ip-address":"127.0.0.1","ip-address-type":"ipv4"},{"ip-address":"::1","ip-address-type":"ipv6","prefix":128}],"statistics":{"tx-errs":0,"rx-errs":0,"tx-bytes":6712,"tx-dropped":0,"tx-packets":88,"rx-bytes":6712,"rx-packets":88,"rx-dropped":0},"hardware-address":"00:00:00:00:00:00","name":"lo"},{"name":"eth0","hardware-address":"36:2b:0f:ba:45:9d","statistics":{"tx-bytes":3631,"tx-packets":31,"tx-dropped":0,"rx-bytes":7673,"rx-dropped":0,"rx-packets":18,"tx-errs":0,"rx-errs":0},"ip-addresses":[{"ip-address-type":"ipv4","ip-address":"192.168.2.41","prefix":24},{"ip-address-type":"ipv6","ip-address":"fe80::342b:fff:feba:459d","prefix":64}]}]}}
+2021/12/29 19:36:52 [DEBUG][initConnInfo] found working QEMU Agent
+2021/12/29 19:36:52 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/config HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:52 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1237
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:52 GMT
+Expires: Thu, 30 Dec 2021 00:36:52 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"onboot":0,"digest":"ed9c7f9089c760bf5ee079f90c3c72e631ecfc04","numa":0,"hotplug":"network,disk,usb","scsihw":"virtio-scsi-pci","sockets":1,"tablet":1,"serial0":"socket","cores":4,"scsi0":"local-lvm:vm-4001-disk-0,iothread=1,size=60620M","name":"docker-host-1","bootdisk":"scsi0","memory":8192,"bios":"seabios","net0":"virtio=36:2B:0F:BA:45:9D,bridge=vmbr1","cpu":"host","smbios1":"uuid=70dbcd8f-3b2c-472b-baf4-0a48184467e4","sshkeys":"%20%20ssh-rsa%20AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI%2FJrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4%2FQnXUW7hAF%2FEmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv%2FLS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF%2FN9dmHEWn8tgPaQADmuQ%2FwDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N%2BIZ9lQYmtYX6gI9K4KV5JFB0M5MRR9%2Bp3YmrO%2BRZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz%2BfBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe%2FY99CAXlmjrHMXe2F4D87u8xdFqdB%2BjcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU%2FW0WvCbrU%3D%20ansible%0A%0A","ipconfig0":"ip=192.168.2.41/24,gw=192.168.2.1","boot":"c","ide2":"local-lvm:vm-4001-cloudinit,media=cdrom,size=4M","kvm":1,"vmgenid":"19a152e7-fa40-4356-a2e3-24bf7b18067d","agent":"1"}}
+2021/12/29 19:36:52 [DEBUG][initConnInfo] trying to find IP address of first network card
+2021/12/29 19:36:52 [DEBUG][initConnInfo] checking network card...
+2021/12/29 19:36:52 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/agent/network-get-interfaces HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:53 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 697
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:53 GMT
+Expires: Thu, 30 Dec 2021 00:36:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"result":[{"name":"lo","hardware-address":"00:00:00:00:00:00","statistics":{"rx-errs":0,"tx-errs":0,"rx-bytes":6712,"rx-dropped":0,"rx-packets":88,"tx-bytes":6712,"tx-packets":88,"tx-dropped":0},"ip-addresses":[{"prefix":8,"ip-address-type":"ipv4","ip-address":"127.0.0.1"},{"prefix":128,"ip-address":"::1","ip-address-type":"ipv6"}]},{"name":"eth0","statistics":{"rx-errs":0,"tx-errs":0,"rx-packets":18,"rx-dropped":0,"rx-bytes":7673,"tx-dropped":0,"tx-packets":31,"tx-bytes":3631},"hardware-address":"36:2b:0f:ba:45:9d","ip-addresses":[{"ip-address-type":"ipv4","ip-address":"192.168.2.41","prefix":24},{"ip-address":"fe80::342b:fff:feba:459d","ip-address-type":"ipv6","prefix":64}]}]}}
+2021/12/29 19:36:53 [DEBUG][initConnInfo] Found IP address: 192.168.2.41
+2021/12/29 19:36:53 [DEBUG][initConnInfo] vm has a cloud-init configuration
+2021/12/29 19:36:53 [DEBUG]  found an ip configuration
+2021/12/29 19:36:53 [DEBUG][QemuVmCreate] vm creation done!
+[90mWed, 29 Dec 2021 19:36:53 -0500[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1207[0m[36m >[0m Reading configuration for vmid [36mloggerName=[0mresource_vm_read [36mvmid=[0m4001
+2021/12/29 19:36:53 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:53 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 2648
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:53 GMT
+Expires: Thu, 30 Dec 2021 00:36:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"diskread":6447980622,"node":"Gandalf","cpu":0.00629199967717211,"disk":0,"maxmem":16777216000,"id":"qemu/1002","vmid":1002,"name":"Plex","uptime":7992402,"maxcpu":16,"diskwrite":63278024704,"mem":15718412288,"template":0,"netin":77439164308,"maxdisk":48318382080,"netout":45668614363,"type":"qemu","status":"running"},{"diskread":0,"node":"Gandalf","cpu":0,"name":"PXE","vmid":2002,"uptime":0,"disk":0,"maxmem":2147483648,"id":"qemu/2002","maxcpu":1,"mem":0,"diskwrite":0,"maxdisk":32212254720,"netout":0,"type":"qemu","status":"stopped","template":0,"netin":0},{"template":1,"netin":0,"type":"qemu","status":"stopped","maxdisk":2361393152,"netout":0,"diskwrite":0,"mem":0,"maxcpu":1,"maxmem":2147483648,"id":"qemu/9000","disk":0,"uptime":0,"vmid":9000,"name":"ubuntu-2104-cloudinit-template","node":"Gandalf","cpu":0,"diskread":0},{"diskwrite":0,"mem":0,"maxcpu":2,"netin":0,"template":0,"status":"stopped","type":"qemu","netout":0,"maxdisk":53687091200,"cpu":0,"node":"Gandalf","diskread":0,"id":"qemu/1003","maxmem":2147483648,"disk":0,"uptime":0,"vmid":1003,"name":"sandbox"},{"maxdisk":2361393152,"netout":2414989,"type":"qemu","status":"running","template":0,"netin":175188529,"maxcpu":1,"mem":1180692480,"diskwrite":3475119104,"name":"test-Ubuntu","vmid":2001,"uptime":1481828,"disk":0,"maxmem":2147483648,"id":"qemu/2001","diskread":424841938,"node":"Gandalf","cpu":0.00290399985100251},{"mem":246894592,"diskwrite":40651264,"maxcpu":4,"netin":440,"template":0,"status":"running","type":"qemu","netout":958,"maxdisk":63564677120,"cpu":0.112287994238764,"node":"Gandalf","diskread":200033490,"id":"qemu/4001","maxmem":8589934592,"disk":0,"uptime":37,"name":"docker-host-1","vmid":4001},{"id":"qemu/1000","maxmem":4328521728,"disk":0,"uptime":7992413,"vmid":1000,"name":"Pi-Hole","cpu":0.0362999981375314,"node":"Gandalf","diskread":615806162,"netin":6656045095,"template":0,"status":"running","type":"qemu","netout":886604045,"maxdisk":42949672960,"mem":1497915392,"diskwrite":140863370752,"maxcpu":2},{"node":"Gandalf","cpu":0.0532399972683794,"diskread":557767890,"uptime":7992408,"name":"wiki","vmid":1001,"maxmem":2147483648,"id":"qemu/1001","disk":0,"mem":1227952128,"diskwrite":5656945664,"maxcpu":1,"type":"qemu","status":"running","maxdisk":48318382080,"netout":13782509,"template":0,"netin":2538727968},{"uptime":1482131,"vmid":2003,"name":"test-CentOS","id":"qemu/2003","maxmem":2147483648,"disk":0,"cpu":0.00483999975167085,"node":"Gandalf","diskread":1642027810,"status":"running","type":"qemu","netout":4621363,"maxdisk":10737418240,"netin":490343679,"template":0,"mem":1150021632,"diskwrite":3939693056,"maxcpu":1}]}
+2021/12/29 19:36:53 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/config HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:53 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1237
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:53 GMT
+Expires: Thu, 30 Dec 2021 00:36:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"hotplug":"network,disk,usb","numa":0,"digest":"ed9c7f9089c760bf5ee079f90c3c72e631ecfc04","onboot":0,"scsihw":"virtio-scsi-pci","serial0":"socket","tablet":1,"sockets":1,"cores":4,"scsi0":"local-lvm:vm-4001-disk-0,iothread=1,size=60620M","memory":8192,"bootdisk":"scsi0","name":"docker-host-1","smbios1":"uuid=70dbcd8f-3b2c-472b-baf4-0a48184467e4","ipconfig0":"ip=192.168.2.41/24,gw=192.168.2.1","sshkeys":"%20%20ssh-rsa%20AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI%2FJrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4%2FQnXUW7hAF%2FEmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv%2FLS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF%2FN9dmHEWn8tgPaQADmuQ%2FwDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N%2BIZ9lQYmtYX6gI9K4KV5JFB0M5MRR9%2Bp3YmrO%2BRZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz%2BfBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe%2FY99CAXlmjrHMXe2F4D87u8xdFqdB%2BjcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU%2FW0WvCbrU%3D%20ansible%0A%0A","net0":"virtio=36:2B:0F:BA:45:9D,bridge=vmbr1","bios":"seabios","cpu":"host","kvm":1,"ide2":"local-lvm:vm-4001-cloudinit,media=cdrom,size=4M","boot":"c","agent":"1","vmgenid":"19a152e7-fa40-4356-a2e3-24bf7b18067d"}}
+2021/12/29 19:36:53 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/storage/local-lvm/content HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:53 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 11
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:53 GMT
+Expires: Thu, 30 Dec 2021 00:36:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[]}
+2021/12/29 19:36:53 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/storage/local-lvm/status HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:54 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 149
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:54 GMT
+Expires: Thu, 30 Dec 2021 00:36:54 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"shared":0,"enabled":1,"avail":779138316318,"content":"images,rootdir","active":1,"type":"lvmthin","total":851238191104,"used":72099874786}}
+2021/12/29 19:36:54 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/Gandalf/qemu/4001/status/current HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:54 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1915
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:54 GMT
+Expires: Thu, 30 Dec 2021 00:36:54 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"disk":0,"ballooninfo":{"mem_swapped_out":0,"actual":8589934592,"total_mem":8338567168,"last_update":1640824613,"major_page_faults":1133,"max_mem":8589934592,"free_mem":7910760448,"minor_page_faults":287212,"mem_swapped_in":0},"status":"running","uptime":42,"agent":1,"nics":{"tap4001i0":{"netin":"7673","netout":"3631"}},"diskwrite":95177216,"name":"docker-host-1","maxmem":8589934592,"vmid":"4001","cpu":0,"freemem":7910760448,"blockstat":{"scsi0":{"rd_operations":8669,"failed_rd_operations":0,"flush_total_time_ns":128408333,"wr_operations":885,"timed_stats":[],"failed_wr_operations":0,"unmap_operations":73,"invalid_unmap_operations":0,"invalid_flush_operations":0,"unmap_merged":0,"wr_bytes":95177216,"unmap_bytes":1204224,"rd_bytes":240333824,"failed_unmap_operations":0,"wr_highest_offset":63564677120,"wr_total_time_ns":2729775160,"unmap_total_time_ns":3317263,"account_failed":true,"rd_total_time_ns":22703021776,"invalid_wr_operations":0,"wr_merged":0,"rd_merged":0,"failed_flush_operations":0,"invalid_rd_operations":0,"idle_time_ns":223924603,"flush_operations":237,"account_invalid":true},"ide2":{"invalid_wr_operations":0,"wr_merged":0,"account_invalid":true,"rd_merged":0,"failed_flush_operations":0,"invalid_rd_operations":0,"idle_time_ns":24644728734,"flush_operations":0,"wr_total_time_ns":0,"unmap_total_time_ns":0,"rd_total_time_ns":30608773,"account_failed":true,"invalid_unmap_operations":0,"invalid_flush_operations":0,"unmap_merged":0,"wr_bytes":0,"unmap_operations":0,"rd_bytes":344274,"failed_unmap_operations":0,"unmap_bytes":0,"wr_highest_offset":0,"rd_operations":95,"failed_rd_operations":0,"wr_operations":0,"flush_total_time_ns":0,"timed_stats":[],"failed_wr_operations":0}},"qmpstatus":"running","ha":{"managed":0},"serial":1,"diskread":240678098,"template":"","netin":7673,"cpus":4,"netout":3631,"balloon":8589934592,"maxdisk":63564677120,"pid":"12861","mem":427806720}}
+2021/12/29 19:36:54 [DEBUG] VM status: running
+[90mWed, 29 Dec 2021 19:36:54 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1236[0m[36m >[0m [READ] Received Config from Proxmox API: {"vmid":0,"name":"docker-host-1","desc":"","bios":"seabios","onboot":false,"tablet":true,"agent":1,"memory":8192,"balloon":0,"os":"other","cores":4,"sockets":1,"vcpus":0,"cpu":"host","numa":false,"kvm":true,"hotplug":"network,disk,usb","iso":"local-lvm:vm-4001-cloudinit","fullclone":null,"boot":"c","bootdisk":"scsi0","scsihw":"virtio-scsi-pci","disk":{"0":{"file":"vm-4001-disk-0","format":"","iothread":1,"size":"60620M","slot":0,"storage":"local-lvm","storage_type":"lvmthin","type":"scsi","volume":"local-lvm:vm-4001-disk-0"}},"unused_disk":{},"network":{"0":{"bridge":"vmbr1","id":0,"macaddr":"36:2B:0F:BA:45:9D","model":"virtio"}},"serial":{"0":{"id":0,"type":"socket"}},"tags":"","args":"","diskGB":0,"storage":"","storageType":"","nic":"","bridge":"","vlan":-1,"mac":"","ciuser":"","cipassword":"","cicustom":"","searchdomain":"","nameserver":"","sshkeys":"  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI/JrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4/QnXUW7hAF/EmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv/LS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF/N9dmHEWn8tgPaQADmuQ/wDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N+IZ9lQYmtYX6gI9K4KV5JFB0M5MRR9+p3YmrO+RZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz+fBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe/Y99CAXlmjrHMXe2F4D87u8xdFqdB+jcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU/W0WvCbrU= ansible\n\n","ipconfig0":"ip=192.168.2.41/24,gw=192.168.2.1","ipconfig1":"","ipconfig2":"","ipconfig3":"","ipconfig4":"","ipconfig5":"","ipconfig6":"","ipconfig7":"","ipconfig8":"","ipconfig9":"","ipconfig10":"","ipconfig11":"","ipconfig12":"","ipconfig13":"","ipconfig14":"","ipconfig15":""} [36mloggerName=[0mresource_vm_read [36mvmid=[0m4001
+[90mWed, 29 Dec 2021 19:36:54 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1328[0m[36m >[0m Unused Disk Block Processed 'map[0:map[bridge:vmbr1 id:0 macaddr:36:2B:0F:BA:45:9D model:virtio]]' [36mloggerName=[0mresource_vm_read [36mvmid=[0m4001
+[90mWed, 29 Dec 2021 19:36:54 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1342[0m[36m >[0m Network block received 'map[0:map[bridge:vmbr1 id:0 macaddr:36:2B:0F:BA:45:9D model:virtio]]' [36mloggerName=[0mresource_vm_read [36mvmid=[0m4001
+2021/12/29 19:36:54 >>>>>>>>>> REQUEST:
+GET /api2/json/pools HTTP/1.1
+Host: proxmox:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:61CCFEA7::qoDrD2HX/xj2rQclwYmdYWyx1ouw0iJrTPTSxOEs2pwpI/L2teL5s7SS47mjpmgnJBLhARxxda2QKBkNHu/+/Zk/3pCp5gsLuD179Es8c9Bvh0H4zOMvK2Gol6I6wKWuuBgmXln4hWijYRW8gnHCa4topZDWiq67bTuuel41/vcXkLBEjyuwgysK/VegthYvMR1+uFdREXW6O98dmg0TavJ2Oij6BVna0XXnmeY0m1q421/X+oNc60ghfXKgfk6eHmdsSIBokgJwCF5XPjTWHkxUq35N3mhICo7HORuEMKIqNn+lLjtXis8QvrwV6uKNjpgxloefz0KNAAfInxVxrA==
+Csrfpreventiontoken: 61CCFEA7:hX7nkzFG6PmN9N4GayL9YZZEl9s6xSTBD3ryp3DT/6Y
+Accept-Encoding: gzip
+
+2021/12/29 19:36:54 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 11
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 30 Dec 2021 00:36:54 GMT
+Expires: Thu, 30 Dec 2021 00:36:54 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[]}
+[90mWed, 29 Dec 2021 19:36:54 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1403[0m[36m >[0m VM Net Config 'map[0:map[bridge:vmbr1 id:0 macaddr:36:2B:0F:BA:45:9D model:virtio tag:-1]]' from '[map[bridge:vmbr1 macaddr:36:2B:0F:BA:45:9D model:virtio tag:-1]]' set as '[map[bridge:vmbr1 firewall:false link_down:false macaddr:36:2B:0F:BA:45:9D model:virtio queues:0 rate:0 tag:-1]]' type of 'string' [36mloggerName=[0mresource_vm_read [36mvmid=[0m4001
+[90mWed, 29 Dec 2021 19:36:54 -0500[0m [33mDBG[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/resource_vm_qemu.go:1405[0m[36m >[0m Finished VM read resulting in data: '{"additional_wait":0,"agent":1,"args":"","balloon":0,"bios":"seabios","boot":"c","bootdisk":"scsi0","bridge":"","ci_wait":0,"cicustom":"","cipassword":"","ciuser":"","clone":"ubuntu-2104-cloudinit-template","clone_wait":0,"cloudinit_cdrom_storage":"","cores":4,"cpu":"host","default_ipv4_address":"192.168.2.41","define_connection_info":true,"desc":"","disk":[{"backup":0,"cache":"none","discard":"","file":"vm-4001-disk-0","format":"","iothread":1,"mbps":0,"mbps_rd":0,"mbps_rd_max":0,"mbps_wr":0,"mbps_wr_max":0,"media":"","replicate":0,"size":"60620M","slot":0,"ssd":0,"storage":"local-lvm","storage_type":"lvmthin","type":"scsi","volume":"local-lvm:vm-4001-disk-0"}],"disk_gb":0,"force_create":false,"force_recreate_on_change_of":"","full_clone":true,"guest_agent_ready_timeout":100,"hagroup":"","hastate":"","hotplug":"network,disk,usb","ipconfig0":"ip=192.168.2.41/24,gw=192.168.2.1","ipconfig1":"","ipconfig2":"","ipconfig3":"","ipconfig4":"","ipconfig5":"","iso":"","kvm":true,"mac":"","memory":8192,"name":"docker-host-1","nameserver":"","network":[{"bridge":"vmbr1","firewall":false,"link_down":false,"macaddr":"36:2B:0F:BA:45:9D","model":"virtio","queues":0,"rate":0,"tag":-1}],"nic":"","numa":false,"onboot":false,"oncreate":true,"os_network_config":"","os_type":"cloud-init","pool":"","preprovision":true,"qemu_os":"other","reboot_required":false,"scsihw":"virtio-scsi-pci","searchdomain":"","serial":[],"sockets":1,"ssh_forward_ip":"","ssh_host":"192.168.2.41","ssh_port":"22","ssh_private_key":"","ssh_user":"","sshkeys":"  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtI/JrpaSGx4LcfEX1EqQAlRj06ts4xBQiOh7mV07CbBZVfPKVyhqNwYS7hyXcjHCeusJPZYSJLwUGZBH13ZXkqUCwouGMR4/QnXUW7hAF/EmpguSfT8YZUaySMb5fAO3HJzQCANefngN1NzkwcsSr9T3bBLmkYZgAHvgrnaOTfTT9U22Mx8Y7OiYuGN3GPhcysvwLYwdOCuMEa3Sv/LS7ea1qdNYw9idpM7EhhaUV4rvGWaUhsFVC7hvF/N9dmHEWn8tgPaQADmuQ/wDBNk1EeWXWKGhmaD6VP7ynrLxeBAUfJHAccCU3ms0N+IZ9lQYmtYX6gI9K4KV5JFB0M5MRR9+p3YmrO+RZ153r8lMfqqnk5rrYnw5fzZbUPAS1SPvKHz+fBgdFcODydWdvjsnIzPd69adsI8vBcMhtZZcqZxOmfUmglk9rLNe/Y99CAXlmjrHMXe2F4D87u8xdFqdB+jcIwpDPiAHcLojFc0dUUkm3yYnUprd6RU/W0WvCbrU= ansible\n\n","storage":"","storage_type":"","tablet":true,"tags":"","target_node":"Gandalf","unused_disk":[],"vcpus":0,"vga":[],"vlan":-1,"vmid":4001}' [36mloggerName=[0mresource_vm_read [36mvmid=[0m4001

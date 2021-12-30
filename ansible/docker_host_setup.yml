@@ -1,0 +1,9 @@
+---
+- hosts: docker_hosts
+  become: yes
+  tasks:
+    - name: install docker
+      apt:
+        name: docker
+        state: latest
+    
